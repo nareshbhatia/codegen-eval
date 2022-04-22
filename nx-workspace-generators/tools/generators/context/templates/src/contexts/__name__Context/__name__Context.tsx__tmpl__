@@ -1,0 +1,42 @@
+import React, { useContext, useState } from 'react';
+
+// ---------- <%= name %>Context ----------
+type <%= name %> = { isEditing: boolean };
+type <%= name %>Setter = (<%= name %>: <%= name %>) => void;
+
+/** <%= name %>Context contains <%= name %> and <%= name %>Setter */
+const <%= name %>Context = React.createContext<
+  { <%= name %>: <%= name %>; set<%= name %>: <%= name %>Setter } | undefined
+>(undefined);
+
+// ---------- <%= name %>ContextProvider ----------
+interface <%= name %>ContextProviderProps {
+  children?: React.ReactNode;
+}
+
+function <%= name %>ContextProvider({ children }: <%= name %>ContextProviderProps) {
+  const [<%= name %>, set<%= name %>] = useState<<%= name %>>({
+    isEditing: false,
+  });
+
+  const value = { <%= name %>, set<%= name %> };
+  return (
+    <<%= name %>Context.Provider value={value}>
+      {children}
+    </<%= name %>Context.Provider>
+  );
+}
+
+// ---------- use<%= name %>Context ----------
+function use<%= name %>Context() {
+  const <%= name %>Context = useContext(<%= name %>Context);
+  /* istanbul ignore next */
+  if (<%= name %>Context === undefined) {
+    throw new Error(
+      'use<%= name %>Context must be used within a <%= name %>ContextProvider'
+    );
+  }
+  return <%= name %>Context;
+}
+
+export { <%= name %>ContextProvider, use<%= name %>Context };
