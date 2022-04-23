@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "name": "react",
+  "version": "0.0.1",
+  "generators": {
+    "react": {
+      "factory": "./src/generators/react/generator",
+      "schema": "./src/generators/react/schema.json",
+      "description": "react generator"
+    },
+    "component": {
+      "factory": "./src/generators/component/generator",
+      "schema": "./src/generators/component/schema.json",
+      "description": "component generator"
+    },
+    "context": {
+      "factory": "./src/generators/context/generator",
+      "schema": "./src/generators/context/schema.json",
+      "description": "context generator"
+    }
+  }
+}

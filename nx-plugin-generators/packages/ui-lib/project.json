@@ -1,0 +1,11 @@
+{
+  "root": "packages/ui-lib",
+  "projectType": "library",
+  "sourceRoot": "packages/ui-lib/src",
+  "targets": {
+    "build": {
+      "executor": "@nx-plugin-generators/react:build"
+    }
+  },
+  "tags": []
+}
