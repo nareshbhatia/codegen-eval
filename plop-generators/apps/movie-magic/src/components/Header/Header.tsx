@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { CogIcon } from '@heroicons/react/outline';
 import { useNavigate } from 'react-router-dom';
 
