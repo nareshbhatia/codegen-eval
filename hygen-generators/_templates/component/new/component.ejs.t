@@ -1,5 +1,5 @@
 ---
-to: packages/ui-lib/src/components/<%= name %>/<%= name %>.tsx
+to: <%= workspace %>/src/components/<%= name %>/<%= name %>.tsx
 ---
 import * as React from 'react';
 
