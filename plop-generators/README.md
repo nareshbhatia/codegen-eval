@@ -14,7 +14,6 @@ $ plop
 ++ /packages/ui-lib/src/components/Button/index.ts
 ++ /packages/ui-lib/src/components/Button/Button.tsx
 
-
 # Run page generator
 $ plop
 ? [PLOP] Please choose a generator. component - Page Generator
