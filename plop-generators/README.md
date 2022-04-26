@@ -1,7 +1,32 @@
 # Plop Generators
 
-Overall comment: As seen from the comments below, documentation is not very
-clear.
+## Setting up plop
+
+```bash
+# Install plop globally for easy access
+$ npm install -g plop
+
+# Run component generator
+$ plop
+? [PLOP] Please choose a generator. component - Component Generator
+? Component name Button
+? Which workspace should this go to? packages/ui-lib
+++ /packages/ui-lib/src/components/Button/index.ts
+++ /packages/ui-lib/src/components/Button/Button.tsx
+
+
+# Run page generator
+$ plop
+? [PLOP] Please choose a generator. component - Page Generator
+? Page name, e.g. HomePage HomePage
+? Which workspace should this go to? apps/movie-magic
+++ /apps/movie-magic/src/pages/HomePage/index.ts
+++ /apps/movie-magic/src/pages/HomePage/HomePage.tsx
+```
+
+## Documentation
+
+As seen from the comments below, documentation is not very clear.
 
 ## TypeScript
 

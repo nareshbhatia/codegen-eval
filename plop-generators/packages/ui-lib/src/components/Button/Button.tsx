@@ -10,7 +10,7 @@ interface ButtonProps {
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }
 
-export const Button = ({
+export function Button({
   rootClass,
   color = 'default',
   disabled = false,
@@ -18,7 +18,7 @@ export const Button = ({
   variant = 'contained',
   children,
   onClick,
-}: ButtonProps) => {
+}: ButtonProps) {
   const classes = [];
 
   if (rootClass) {
@@ -94,4 +94,4 @@ export const Button = ({
       {children}
     </button>
   );
-};
+}
