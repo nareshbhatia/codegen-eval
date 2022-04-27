@@ -67,6 +67,9 @@ npm install --save-dev @nx-plugin-generators/react
 # Run "react" plugin to generate a component
 # Creates /packages/ui-lib/components/Button
 nx g @nx-plugin-generators/react:component Button --project=ui-lib
+
+# If you have published the plugin locally, then you can unpublish it like this:
+npm unlink -g @nx-plugin-generators/react
 ```
 
 ## Prompting the user for properties
