@@ -36,8 +36,6 @@ $ hygen react-page new OrdersPage
 $ hygen react-component new OrderList
 ```
 
-## Documentation
-
 ## Choosing workspace directory
 
 There is no good enquirer prompt for selecting a directory interactively.

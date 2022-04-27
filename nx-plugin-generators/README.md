@@ -68,3 +68,45 @@ npm install --save-dev @nx-plugin-generators/react
 # Creates /packages/ui-lib/components/Button
 nx g @nx-plugin-generators/react:component Button --project=ui-lib
 ```
+
+## Prompting the user for properties
+
+Use `x-prompt` in schema.json:
+
+```json
+{
+  "$schema": "http://json-schema.org/schema",
+  "cli": "nx",
+  "$id": "Component",
+  "title": "",
+  "type": "object",
+  "properties": {
+    "project": {
+      "type": "string",
+      "description": "Project name",
+      "$default": {
+        "$source": "projectName"
+      },
+      "x-prompt": "Which workspace should this go to?"
+    },
+    "name": {
+      "type": "string",
+      "description": "",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What name would you like to use for the component?"
+    }
+  },
+  "required": ["project", "name"]
+}
+```
+
+## If project property is missed, @nrwl/react generator defaults it
+
+```sh
+nx generate @nrwl/react:component --name=Hello --dry-run
+```
+
+Specifically you can't choose from the available projects.
