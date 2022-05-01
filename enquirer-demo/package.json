@@ -1,0 +1,16 @@
+{
+  "name": "enquirer-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.ts"
+  },
+  "keywords": [],
+  "author": "Naresh Bhatia",
+  "license": "ISC",
+  "dependencies": {
+    "enquirer": "^2.3.6",
+    "yargs": "^17.4.1"
+  }
+}

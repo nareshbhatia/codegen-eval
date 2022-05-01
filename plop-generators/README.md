@@ -82,7 +82,7 @@ There are no good examples for `addMany`.
 ## Could not make append work
 
 Don't know how to specify the template for barreling file `index.tsx`. Their
-example puts it under `plop-files` - can't tell it this is a magic directory
+example puts it under `plop-files` - can't tell if this is a magic directory
 name.
 
 Example:
