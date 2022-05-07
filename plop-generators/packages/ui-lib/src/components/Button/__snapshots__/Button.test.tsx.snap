@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> class can be added via rootClass prop 1`] = `
+<DocumentFragment>
+  <button
+    class="ml-2 button button--contained button--contained-default button--medium"
+  >
+    Submit
+  </button>
+</DocumentFragment>
+`;
+
+exports[`<Button /> sizes render correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <button
+      class="button button--contained button--contained-default button--small"
+    >
+      Submit
+    </button>
+    <button
+      class="button button--contained button--contained-default button--medium"
+    >
+      Submit
+    </button>
+    <button
+      class="button button--contained button--contained-default button--large"
+    >
+      Submit
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Button /> variant="contained" renders correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <button
+      class="button button--contained button--contained-default button--medium"
+    >
+      Submit
+    </button>
+    <button
+      class="button button--contained button--contained-primary button--medium"
+    >
+      Submit
+    </button>
+    <button
+      class="button button--contained button--contained-secondary button--medium"
+    >
+      Submit
+    </button>
+    <button
+      class="button button--contained button--disabled button--disabled-contained button--medium"
+    >
+      Submit
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Button /> variant="outlined" renders correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <button
+      class="button button--outlined button--outlined-default button--medium"
+    >
+      Submit
+    </button>
+    <button
+      class="button button--outlined button--outlined-primary button--medium"
+    >
+      Submit
+    </button>
+    <button
+      class="button button--outlined button--outlined-secondary button--medium"
+    >
+      Submit
+    </button>
+    <button
+      class="button button--outlined button--disabled button--disabled-outlined button--medium"
+    >
+      Submit
+    </button>
+  </div>
+</DocumentFragment>
+`;

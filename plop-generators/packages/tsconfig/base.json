@@ -9,6 +9,7 @@
     "forceConsistentCasingInFileNames": true,
     "lib": ["es2021"],
     "module": "commonjs",
+    "moduleResolution": "node",
     "noFallthroughCasesInSwitch": true,
     "noImplicitOverride": true,
     "noImplicitReturns": true,
