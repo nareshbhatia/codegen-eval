@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { PageLayout } from './components';
 import { HomePage, NotFoundPage, SettingsPage } from './pages';
