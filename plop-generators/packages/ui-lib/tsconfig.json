@@ -1,5 +1,11 @@
 {
   "extends": "tsconfig/react-library.json",
   "include": ["src"],
-  "exclude": ["dist", "build", "node_modules", "**/*.test.ts"]
+  "exclude": [
+    "dist",
+    "build",
+    "node_modules",
+    "**/*.stories.tsx",
+    "**/*.test.{js,jsx,ts,tsx}"
+  ]
 }
