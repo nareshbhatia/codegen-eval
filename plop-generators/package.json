@@ -20,6 +20,7 @@
   "devDependencies": {
     "inquirer-directory": "^2.2.0",
     "inquirer-fuzzy-path": "^2.3.0",
+    "klaw-sync": "^6.0.0",
     "plop": "^3.0.6",
     "prettier": "^2.6.2",
     "turbo": "latest"
