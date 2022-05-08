@@ -38,13 +38,14 @@ p {
   margin: 0;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* ----- Interactivity ----- */
+/* ----- Tables ----- */
 
 table {
   width: 100%;
@@ -78,11 +79,17 @@ thead {
   cursor: pointer;
 }
 
-/* ----- Flexbox ----- */
+/* ----- Display ----- */
 
 .flex {
   display: flex;
 }
+
+.inline-block {
+  display: inline-block;
+}
+
+/* ----- Flexbox ----- */
 
 .flex-row {
   flex-direction: row;
@@ -624,6 +631,10 @@ thead {
   height: 40px;
 }
 
+.h-56 {
+  height: 56px;
+}
+
 .h-86 {
   height: 86px;
 }
@@ -642,6 +653,10 @@ thead {
 
 .w-40 {
   width: 40px;
+}
+
+.w-56 {
+  width: 56px;
 }
 
 .max-w-375 {

@@ -4,7 +4,7 @@ module.exports = {
     {
       type: 'input',
       name: 'name',
-      message: 'Page name, e.g. HomePage',
+      message: 'Page name (e.g. HomePage)',
     },
     {
       type: 'folder',

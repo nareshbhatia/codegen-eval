@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Avatar /> renders correctly 1`] = `
+<DocumentFragment>
+  <img
+    alt="Paul Silva"
+    class="inline-block h-56 w-56 rounded-full"
+    src="https://images.unsplash.com/photo-1568585105565-e372998a195d?w=256&h=256&fit=crop&crop=entropy"
+  />
+</DocumentFragment>
+`;

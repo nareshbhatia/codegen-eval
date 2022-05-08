@@ -16,14 +16,16 @@ module.exports = {
   actions: ({ name, folder }) => {
     return [
       {
-        type: 'add',
-        path: '{{workspace}}/src/components/{{name}}/index.ts',
-        templateFile: './generators/component/index.hbs',
+        type: 'addMany',
+        destination: '{{workspace}}/src/components/{{name}}',
+        base: 'templates/component',
+        templateFiles: 'templates/component/**/*.hbs'
       },
       {
-        type: 'add',
-        path: '{{workspace}}/src/components/{{name}}/{{name}}.tsx',
-        templateFile: './generators/component/component.hbs',
+        type: 'modify',
+        path: '{{workspace}}/src/components/index.ts',
+        pattern: /(\/\/ -- PREPEND EXPORTS HERE --)/gi,
+        template: "export * from './{{name}}';\n$1",
       },
     ];
   },
