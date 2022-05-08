@@ -6,7 +6,7 @@ async function contact(argv) {
   const questions = [
     {
       // autofill for select is broken - see https://github.com/enquirer/enquirer/issues/386
-      type: 'select',
+      type: 'list',
       name: 'name',
       choices: [
         { name: 'Mat', value: 'Mat' },

@@ -7,10 +7,20 @@ module.exports = {
       message: 'Component name',
     },
     {
-      type: 'folder',
+      type: 'fuzzypath',
       name: 'workspace',
+      itemType: 'directory',
       message: 'Which workspace should this go to?',
-      basePath: '.', // Relative to CwD
+      excludePath: (nodePath) => {
+        // If a parent directory is excluded then children will not be
+        // traversed. Hence, '.' must be included.
+        const includePath =
+          nodePath.startsWith('.') ||
+          nodePath.startsWith('apps') ||
+          nodePath.startsWith('packages');
+        return !includePath;
+      },
+      depthLimit: 1,
     },
   ],
   actions: ({ name, folder }) => {
@@ -19,7 +29,7 @@ module.exports = {
         type: 'addMany',
         destination: '{{workspace}}/src/components/{{name}}',
         base: 'templates/component',
-        templateFiles: 'templates/component/**/*.hbs'
+        templateFiles: 'templates/component/**/*.hbs',
       },
       {
         type: 'modify',

@@ -12,7 +12,7 @@ node index.js component --name Header
 ## Observations
 
 - Good number of plugins from community
-- Answered questions are skipped. Added `askAnswered` simply asks the answered
+- Answered questions are skipped. Add `askAnswered` to ask the answered
   question without prefilling the known answer.
 - Documentation is decent.
 - Last code commit was on Apr 28, 2022 (3 days ago)
