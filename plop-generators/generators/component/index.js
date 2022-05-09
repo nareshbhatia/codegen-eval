@@ -43,8 +43,8 @@ module.exports = {
       {
         type: 'addMany',
         destination: '{{workspace}}/src/components/{{name}}',
-        base: 'templates/component',
-        templateFiles: 'templates/component/**/*.hbs',
+        base: 'generators/component/templates',
+        templateFiles: 'generators/component/templates/**/*.hbs',
       },
       {
         type: 'modify',
